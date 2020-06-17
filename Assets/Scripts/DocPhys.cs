@@ -273,11 +273,11 @@ public class DocPhys : MonoBehaviour
 
     public bool Leap()
     {
-        float fJumpSpeedFull = (0.5f + (GameData.instance.iShungitecollected / 4f)) * fJumpSpeed;
+        float fJumpSpeedFull = (0.5f + (GameData.instance.iShungitecollected / 5f)) * fJumpSpeed;
         if (IsGrounded())
         {
             m_v3MoveDirection = transform.forward * fJumpSpeedFull;
-            m_v3MoveDirection.y += Random.Range(0, fJumpSpeedFull);
+            m_v3MoveDirection.y += Random.Range(0, fJumpSpeedFull / 1.5f);
             float fHeightDiff = m_goTarget.transform.position.y - this.transform.position.y;
 
             m_v3MoveDirection.y += Random.Range(-fHeightDiff / 2, fHeightDiff / 2);

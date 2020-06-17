@@ -281,3 +281,6 @@ C:\Programs\OperationShungite\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs
 C:\Programs\OperationShungite\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Programs\OperationShungite\obj\Debug\Assembly-CSharp.dll
 C:\Programs\OperationShungite\obj\Debug\Assembly-CSharp.pdb
+C:\Programs\OperationShungite\Temp\bin\Debug\nunit.framework.dll
+C:\Programs\OperationShungite\Temp\bin\Debug\nunit.framework.pdb
+C:\Programs\OperationShungite\Temp\bin\Debug\nunit.framework.xml

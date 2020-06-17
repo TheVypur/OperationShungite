@@ -56,17 +56,8 @@ public class FirstPersonCamera : MonoBehaviour
         {
             bIsHoldingModifier = true;
 
-            fAngleDifference = Mathf.Abs(localRotation.eulerAngles.y - goPlayerObj.transform.eulerAngles.y);
+            localRotation = Quaternion.Euler(-fXRotation, fYRotation + 180, 0.0f);
 
-            if (fAngleDifference > fMaxOverShoulderAngleDifference && fAngleDifference < 360-fMaxOverShoulderAngleDifference)
-            {
-                localRotation = Quaternion.Euler(fXRotation, tCamera.localEulerAngles.y, 0.0f);
-                fYRotation -= inputY * fSensitivity;
-            }
-            else
-            {
-                
-            }
         }
         else
         {

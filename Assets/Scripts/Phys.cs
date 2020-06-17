@@ -273,7 +273,11 @@ public class Phys : MonoBehaviour
             {
                 if (!bHasDoubleJumped)
                 {
-                    m_v3MoveDirection.y = fJumpSpeed;
+                    if (m_v3MoveDirection.y < fJumpSpeed)
+                        m_v3MoveDirection.y = fJumpSpeed;
+                    else
+                        m_v3MoveDirection.y += fJumpSpeed;
+
                     m_Anim.SetBool("Jump", true);
                     bJumped = true;
                     fJumpTimer = 0;

@@ -45,6 +45,7 @@ public class IntroScreen : MonoBehaviour
 
     public void Begin()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Scenes/test_scene");
     }
 }

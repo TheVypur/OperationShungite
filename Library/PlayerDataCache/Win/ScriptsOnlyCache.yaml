@@ -20,6 +20,7 @@ ScriptsOnlyBuild:
     - PauseMenuHandler
     - Phys
     - Shungite
+    - StadiumTrigger
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
     - UnityEngine.Rendering.PostProcessing.AutoExposure
@@ -91,11 +92,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12852}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13054}
     - Class: 114
-      Script: {instanceID: 13232}
+      Script: {instanceID: 13234}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 13270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -224,17 +225,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12852}
     - Class: 114
-      Script: {instanceID: 12932}
+      Script: {instanceID: 12868}
     - Class: 114
-      Script: {instanceID: 13110}
+      Script: {instanceID: 12934}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 13112}
     - Class: 114
-      Script: {instanceID: 13168}
+      Script: {instanceID: 13154}
     - Class: 114
-      Script: {instanceID: 13232}
+      Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 13234}
+    - Class: 114
+      Script: {instanceID: 13284}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -542,7 +545,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 5cc28ad434bfc60be64355e6445a01be
+      Hash: de5e0a9c44448a3f22762c791db7d7c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameData
@@ -762,6 +765,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 0259ed6e4268939c974bcc22709292cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StadiumTrigger
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7

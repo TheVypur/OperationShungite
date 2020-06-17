@@ -11,6 +11,8 @@ public class GameData : MonoBehaviour
     public Text m_ShungiteCollectedtext;
     public GameObject GameOverUI;
     public GameObject VictoryScreen;
+    public GameObject goPlayer;
+    public GameObject DefeatHimPanel;
 
     public bool bIsPaused = false;
 
@@ -92,6 +94,8 @@ public class GameData : MonoBehaviour
         if (iShungitecollected == 6)
         {
             m_Gun.gameObject.SetActive(true);
+            DefeatHimPanel.SetActive(true);
+            m_ShungiteCollectedtext.enabled = false;
         }
 
         m_ShungiteCollectedtext.text = iShungitecollected + "/6";

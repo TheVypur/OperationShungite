@@ -39,7 +39,7 @@ public class DocMove : MonoBehaviour
 
     private void Update()
     {
-        fActionMaxCheck = 3.0f - (GameData.instance.iShungitecollected / 2f);
+        fActionMaxCheck = 3.15f - (GameData.instance.iShungitecollected / 2f);
     }
 
     // Update is called once per frame

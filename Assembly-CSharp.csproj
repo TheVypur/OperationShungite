@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Phys.cs" />
     <Compile Include="Assets\Scripts\Shungite.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\StadiumTrigger.cs" />
     <Compile Include="Assets\Tutorial_Info\Scripts\Readme.cs" />
     <None Include="Assets\Shaders\Wireframe.shader" />
     <None Include="Assets\Doc\StandardDoubleSided.shader" />

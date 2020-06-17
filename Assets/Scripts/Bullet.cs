@@ -45,11 +45,14 @@ public class Bullet : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             DetonateOrDestroy();
-        }       
-        else
-            return;
 
-        
+            GameData.instance.EndGame();
+        }
+        else if (other.GetComponent<Phys>())
+            return;
+        else
+            DetonateOrDestroy();
+
     }
 
     void DetonateOrDestroy()
