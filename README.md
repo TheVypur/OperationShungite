@@ -1,6 +1,6 @@
-![header](https://imgur.com/i3L2vH6)
+![header](https://imgur.com/i3L2vH6.png)
 
-![gif1](https://imgur.com/eoeW2I2)
+![gif1](https://imgur.com/eoeW2I2.gif)
 
 OPERATION SHUNGITE
 
@@ -11,7 +11,7 @@ OPERATION SHUNGITE
 > don't get touched
 
 
-![Gif2](https://imgur.com/hOUkh1f)
+![Gif2](https://imgur.com/hOUkh1f.gif)
 
 ---
 
