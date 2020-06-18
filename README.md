@@ -11,7 +11,7 @@ OPERATION SHUNGITE
 > don't get touched
 
 
-![Gif2](https://imgur.com/hOUkh1f.gif)
+![gif2](https://imgur.com/hOUkh1f.gif)
 
 ---
 
