@@ -10,6 +10,8 @@ OPERATION SHUNGITE
 
 > don't get touched
 
+Hes comin'
+
 
 ![gif2](https://imgur.com/hOUkh1f.gif)
 
@@ -32,9 +34,6 @@ OPERATION SHUNGITE
 ---
 
 ## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
 
 ---
 
