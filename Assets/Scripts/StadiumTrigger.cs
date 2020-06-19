@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StadiumTrigger : MonoBehaviour
 {
@@ -16,21 +17,32 @@ public class StadiumTrigger : MonoBehaviour
 
         if (instance != this)
         {
-            instance = this;
-            GameObject.Destroy(this.gameObject);
+            GameObject.DestroyImmediate(this.gameObject);
         }
 
-
         DontDestroyOnLoad(this.gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+        if (bHasBeenTriggered)
+        {
+            GameData.instance.goPlayer.GetComponent<CharacterController>().enabled = false;
+            GameData.instance.goPlayer.transform.position = this.transform.position;
+            GameData.instance.goPlayer.GetComponent<CharacterController>().enabled = true;
+            Camera.main.transform.parent.GetComponent<FirstPersonCamera>().enabled = true;
+            Camera.main.transform.parent.GetComponent<Animator>().Play("Default");
+        }
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (bHasBeenTriggered)
         {
             GameData.instance.goPlayer.GetComponent<CharacterController>().enabled = false;
             GameData.instance.goPlayer.transform.position = this.transform.position;
             GameData.instance.goPlayer.GetComponent<CharacterController>().enabled = true;
+            Camera.main.transform.parent.GetComponent<FirstPersonCamera>().enabled = true;
+            Camera.main.transform.parent.GetComponent<Animator>().Play("Default");
         }
     }
 

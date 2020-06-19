@@ -260,7 +260,6 @@ public class Phys : MonoBehaviour
         if (IsGrounded())
         {
             m_v3MoveDirection.y = fJumpSpeed;
-            m_Anim.SetBool("Jump", true);
             bJumped = true;
             fJumpTimer = 0;
             return true;
@@ -278,7 +277,6 @@ public class Phys : MonoBehaviour
                     else
                         m_v3MoveDirection.y += fJumpSpeed;
 
-                    m_Anim.SetBool("Jump", true);
                     bJumped = true;
                     fJumpTimer = 0;
                     bHasDoubleJumped = true;

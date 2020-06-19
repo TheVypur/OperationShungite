@@ -16,10 +16,8 @@ public class MouseSens : MonoBehaviour
 
         if (instance != this)
         {
-            instance = this;
             GameObject.Destroy(this.gameObject);
         }
-
 
         DontDestroyOnLoad(this.gameObject);
     }
